@@ -21,8 +21,8 @@ display_height  = 600
 gameDisplay = pygame.display.set_mode((display_width,display_height))
 pygame.display.set_caption('Snake')
 
-background = pygame.image.load("Background.png")
-snakSheet = pygame.image.load("snakeImage.png")
+background = pygame.image.load("Snake-Game-py/src/Background.png")
+snakSheet = pygame.image.load("Snake-Game-py/src/snakeImage.png")
 
 AppleSprite = snakSheet.subsurface(pygame.Rect((0, 3*64, 64, 64)))
 
@@ -160,8 +160,8 @@ def gameLoop():
     pygame.quit()
     quit()
     
-#Main    
-gameLoop()
+if __name__ == "__main__":
+    gameLoop()
 
 
 
